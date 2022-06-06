@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import express from 'express';
-const port = 8080;
+const port = process.env.PORT || 3000;
 const app = express()
 
 app.get('/', (req, res) => {
